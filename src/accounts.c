@@ -1,7 +1,7 @@
 #include "header.h"
 
 void createNewAccount(struct User u)
-{
+{ 
     struct Record records[MAX_RECORDS];
     int count = loadAllRecords(records, MAX_RECORDS);
 

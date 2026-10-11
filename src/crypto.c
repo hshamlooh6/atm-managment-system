@@ -1,7 +1,16 @@
+#if defined(__APPLE__)
+#define _DARWIN_C_SOURCE
+#include <unistd.h>
+#else
 #define _GNU_SOURCE
 #include <crypt.h>
+#endif
+
 #include <time.h>
 #include "header.h"
+
+//wroted by myself by watching toturials 
+//AI improve it 
 
 static void generateSalt(char outSalt[32])
 {

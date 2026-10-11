@@ -5,9 +5,9 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define NAME_LEN 50        
-#define PASSWORD_LEN 128  
-#define COUNTRY_LEN 100  
+#define NAME_LEN 50      
+#define PASSWORD_LEN 128   
+#define COUNTRY_LEN 100    
 #define ACC_TYPE_LEN 10   
 
 #define MAX_USERS 500      
@@ -25,13 +25,13 @@ struct Date
 
 struct Record
 {
-    int id;                      
-    int userId;              
-    char name[NAME_LEN];        
-    int accountNbr;           
-    struct Date deposit;         
-    char country[COUNTRY_LEN];  
-    int phone;                
+    int id;                    
+    int userId;                
+    char name[NAME_LEN];       
+    int accountNbr;             
+    struct Date deposit;       
+    char country[COUNTRY_LEN];   
+    int phone;            
     double amount;              
     char accountType[ACC_TYPE_LEN]; 
 };
@@ -40,7 +40,7 @@ struct User
 {
     int id;
     char name[NAME_LEN];
-    char password[PASSWORD_LEN];
+    char password[PASSWORD_LEN]; 
 };
 
 void clearInputBuffer(void);
@@ -83,10 +83,6 @@ void makeTransaction(struct User u);
 void removeAccount(struct User u);
 void transferOwnership(struct User u);
 
-void notifyStart(const struct User *u);
-void notifyStop(void);
-void notifySend(const char *toUserName, const char *message);
-
 void mainMenu(struct User u);
 
-#endif 
+#endif

@@ -129,6 +129,7 @@ int loadAllRecords(struct Record list[], int maxCount)
             int c;
             while ((c = fgetc(fp)) != '\n' && c != EOF)
             {
+
             }
             continue;
         }

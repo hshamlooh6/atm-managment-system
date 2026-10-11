@@ -36,7 +36,7 @@ static void welcomeScreen(struct User *u)
             waitForEnter();
         }
     }
-}
+}gf=[          ]
 
 int main(void)
 {
@@ -44,10 +44,7 @@ int main(void)
 
     welcomeScreen(&u);
 
-    notifyStart(&u);
-
     mainMenu(u);
-
-    notifyStop();
+    
     return 0;
 }

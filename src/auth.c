@@ -2,6 +2,7 @@
 #include <unistd.h>
 #include "header.h"
 
+//this function is AI Generated
 static void readHiddenLine(char *buffer, int bufferSize)
 {
     struct termios oldFlags, newFlags;
@@ -13,7 +14,7 @@ static void readHiddenLine(char *buffer, int bufferSize)
     }
 
     newFlags = oldFlags;
-    newFlags.c_lflag &= ~ECHO;  
+    newFlags.c_lflag &= ~ECHO;   
     newFlags.c_lflag |= ECHONL; 
 
     if (tcsetattr(STDIN_FILENO, TCSANOW, &newFlags) != 0)

@@ -1,10 +1,12 @@
 #include "header.h"
 
+//All the functions are ai generated
 void clearInputBuffer(void)
 {
     int c;
     while ((c = getchar()) != '\n' && c != EOF)
     {
+        
     }
 }
 
@@ -42,6 +44,7 @@ void readStringSafe(const char *prompt, char *buffer, int bufferSize)
         int c;
         while ((c = getchar()) != '\n' && c != EOF)
         {
+
         }
     }
 }

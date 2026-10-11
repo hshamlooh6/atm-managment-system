@@ -1,3 +1,4 @@
+
 #include "header.h"
 
 double interestRateForType(const char *accountType)

@@ -84,10 +84,5 @@ void transferOwnership(struct User u)
 
     printf("\n✔ Account %d transferred to %s.\n", accountNbr, newOwner.name);
 
-    char message[128];
-    snprintf(message, sizeof(message),
-             "You just received account %d from %s!", accountNbr, u.name);
-    notifySend(newOwner.name, message);
-
     waitForEnter();
 }

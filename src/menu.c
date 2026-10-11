@@ -1,3 +1,4 @@
+
 #include "header.h"
 
 void mainMenu(struct User u)
@@ -44,7 +45,6 @@ void mainMenu(struct User u)
             transferOwnership(u);
             break;
         case 8:
-            notifyStop();
             printf("\nGoodbye, %s!\n", u.name);
             exit(0);
         default:
