@@ -36,7 +36,7 @@ static void welcomeScreen(struct User *u)
             waitForEnter();
         }
     }
-}gf=[          ]
+}
 
 int main(void)
 {
